@@ -60,14 +60,8 @@ vim.keymap.set('n', '<up>', function()
   end
 end, { desc = 'Close split or open file explorer if last window' })
 vim.keymap.set('n', '<C-q>', function()
-  local win_count = vim.fn.winnr '$'
-  if win_count > 1 then
-    vim.cmd 'update'
-    vim.cmd 'close'
-  else
-    vim.cmd 'update'
-    vim.cmd 'Oil'
-  end
+  vim.cmd 'update'
+  vim.cmd 'Oil'
 end, { desc = 'Close split or open file explorer if last window' })
 
 vim.keymap.set('n', '<right>', '<C-w>v', { desc = 'Split window vertically' })
