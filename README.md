@@ -1,3 +1,1 @@
 # kicknvimconfig
-
-test
